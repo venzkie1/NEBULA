@@ -1,0 +1,25 @@
+*{
+    color: #fff;
+}
+
+body{
+    background: #1d2630;
+}
+
+#Update{
+    display: none;
+}
+select option{
+    color: black;
+}
+.content-box2{
+    justify-content: end;
+    float: right;
+}
+span{
+    color: red;
+}
+
+td, th {
+    vertical-align: middle;
+}

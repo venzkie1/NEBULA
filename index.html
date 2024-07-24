@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div class="overlay">
+    <form method="POST" onsubmit="login(event)">
+        <div class="con">
+        <header class="head-form">
+          <h2>Log In</h2>
+          <p>login here using your email and password</p>
+        </header>
+        <br>
+        <div class="field-set">
+
+              <span class="input-item">
+                <i class="fa fa-user-circle"></i>
+              </span>
+
+              <input class="form-input" id="email" type="text" placeholder="@Email" required>
+
+          <br>
+
+          <span class="input-item">
+
+            <i class="fa fa-key"></i>
+            </span>
+          <input class="form-input" type="password" placeholder="Password" id="password"  name="password" required>
+          
+          <br>
+          <button class="log-in" type="submit"> Log In </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+    <!-- custom js -->
+    <script>
+      function login(event) {
+        // Prevent default form submission
+        event.preventDefault();
+
+        const email = "admin@nebula.com";
+        const password = "adminNebula0022211";
+        let getEmail = document.getElementById("email").value;
+        let getPassword = document.getElementById("password").value;
+
+        if (email !== getEmail || password !== getPassword) {
+          alert('Email or Password is not correct');
+          return;
+        }
+        
+        window.location.replace("information.html");
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+</body>
+</html>
