@@ -31,8 +31,23 @@
                 </div>
 
                 <div class="form-group col-md-6 mb-3">
+                    <span>*</span> <label for="jobClass">CLASS </label>
+                    <input type="text" name="jobClass" class="form-control" id="jobClass" placeholder="Enter Class">
+                </div>
+
+                <div class="form-group col-md-6 mb-3">
                     <span>*</span> <label for="guild">Guild </label>
                     <input type="text" name="guild" class="form-control" id="guild" placeholder="Enter Guild">
+                </div>
+
+                <div class="form-group col-md-6 mb-3">
+                    <span>*</span> <label for="attendance">Attendance Count </label>
+                    <input type="number" name="attendance" class="form-control" id="attendance" placeholder="Enter Guild">
+                </div>
+
+                <div class="form-group col-md-6 mb-3">
+                    <span>*</span> <label for="wallet">E-Wallet | Optional </label>
+                    <input type="text" name="wallet" class="form-control" id="wallet" placeholder="Enter E-Wallet">
                 </div>
 
                 <div class="col-lg-12 mt-5">
@@ -45,8 +60,19 @@
         <hr>
         <div class="container mt-5">
 
-            <div class="mb-3">
-                <input type="text" id="searchBar" class="form-control" placeholder="Search...">
+            <div class="row justify-content-between mb-3">
+                <div class="col-auto">
+                    <select id="sortOrder" class="form-select">
+                        <option value="asc">Lowest Growth</option>
+                        <option value="desc">Highest Growth</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <input type="text" id="searchBar" class="form-control" placeholder="Search...">
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-danger" id="clearData" type="button">Clear</button>
+                </div>
             </div>
 
             <div class="row justify-content-center">
@@ -57,7 +83,10 @@
                                 <th>IGN</th>
                                 <th>Growth Rate</th>
                                 <th>Server</th>
+                                <th>Class</th>
                                 <th>Guild</th>
+                                <th>Attendance Count</th>
+                                <th>E-Wallet</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -74,6 +103,7 @@
 
 
     <script src="js/information.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 
 </body>
 </html>
