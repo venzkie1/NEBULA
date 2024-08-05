@@ -23,3 +23,15 @@ span{
 td, th {
     vertical-align: middle;
 }
+
+.table th.attendance {
+    width: 150px;
+}
+
+.table th.wallet {
+    width: 250px;
+}
+
+#clearData {
+    display: none;
+}

@@ -17,7 +17,7 @@ function validateForm() {
     let server = document.getElementById(`server`).value;
     let guild = document.getElementById(`guild`).value;
     let jobClass = document.getElementById(`jobClass`).value;
-    let wallet = document.getElementById(`wallet`).value;
+    // let wallet = document.getElementById(`wallet`).value;
     let attendance = document.getElementById(`attendance`).value;
 
     if (name == "") {
@@ -80,14 +80,16 @@ function showData() {
         let upperCaseGuild = element.guild ? element.guild.toUpperCase() : '';
         let upperCaseJobClass = element.jobClass ? element.jobClass.toUpperCase() : '';
 
+        document.getElementById("clearData").style.display = "block";
+
         html += "<tr>";
         html += "<td>" + (element.name || '') + "</td>";
         html += "<td>" + (formattedGrowth || '') + "</td>";
         html += "<td>" + upperCaseServer + "</td>";
         html += "<td>" + upperCaseJobClass + "</td>";
         html += "<td>" + upperCaseGuild + "</td>";
-        html += "<td>" + (element.wallet || '') + "</td>";
         html += "<td>" + (element.attendance || '') + "</td>";
+        html += "<td>" + (element.wallet || '') + "</td>";
         html += '<td><button onclick="deleteData(' + index + ')" class="btn btn-danger">Delete</button><button onclick="updateData(' + index + ')" class="btn btn-warning m-2">Edit</button></td>';
         html += "</tr>";
     });
@@ -120,8 +122,8 @@ function AddData() {
             server: server,
             guild: guild,
             jobClass: jobClass,
-            wallet: wallet,
             attendance: attendance,
+            wallet: wallet,
         });
 
         localStorage.setItem("peopleList", JSON.stringify(peopleList));
@@ -131,8 +133,8 @@ function AddData() {
         document.getElementById(`server`).value = "";
         document.getElementById(`guild`).value = "";
         document.getElementById(`jobClass`).value = "";
-        document.getElementById(`wallet`).value = "";
         document.getElementById(`attendance`).value = "";
+        document.getElementById(`wallet`).value = "";
     }
 }
 
