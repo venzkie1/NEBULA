@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bh.css">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <title>BH TRACKER | NEBULA</title>
+</head>
+<body>
+    <div class="mb-5 form-container">
+        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+            <form id="bossForm" class="form-group mb-3 text-center">
+                <h1 class="title">NEBULA</h1>
+                <label for="bossSelect">Select a Boss</label>
+                <select name="boss" class="form-control bossInput" id="bossSelect">
+                    <option value="" selected disabled>-----</option>
+                    <option value="Anggolt">Anggolt</option>
+                    <option value="Kiaron">Kiaron</option>
+                    <option value="Grish">Grish</option>
+                    <option value="Inferno">Inferno</option>
+                </select>
+                
+                <div class="row mt-3">
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="timeOfDeath">Time of Death</label>
+                        <input type="time" name="timeOfDeath" class="form-control" id="timeOfDeath" placeholder="e.g 5:07 PM">
+                    </div>
+            
+                    <div class="form-group col-md-6 mb-3">
+                        <label for="Location">Location</label>
+                        <input type="text" name="Location" class="form-control" id="Location" placeholder="e.g 76 Source of Heavy Combat">
+                    </div>
+            
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <button type="button" class="btn btn-success" id="Submit" onclick="AddData()">Submit</button>
+                        <button type="button" class="btn btn-primary" id="updateBtn" style="display: none;" onclick="UpdateData()">Update</button>
+                    </div>                    
+                </div>
+            </form>
+        </div>
+    </div>
+       
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <h1 id="anggolt">Anggolt</h1>
+                <div id="anggolt-entries" class="entries-container">
+                    <!-- Entries will be appended here -->
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h1 id="Kiaron">Kiaron</h1>
+                <div id="kiaron-entries" class="entries-container">
+                    <!-- Entries will be appended here -->
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h1 id="grish">Grish</h1>
+                <div id="grish-entries" class="entries-container">
+                    <!-- Entries will be appended here -->
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h1 id="inferno">Inferno</h1>
+                <div id="inferno-entries" class="entries-container">
+                    <!-- Entries will be appended here -->
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/bh.js"></script>
+</body>
+</html>

@@ -11,7 +11,16 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="mt-5 mb-5">Guild Form</h2>
+        <h2 class="mt-5 mb-5 d-inline">Guild Form</h2> 
+        <div class="menu d-inline float-end">
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div class="menu-items">
+                <a href="#">Home</a>
+                <a href="wheel.html">Wheel of Names</a>
+                <a href="bh.html">BH Tracker</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
         <h6 class="mt-5 mb-5">In-game Information</h6>
         <div class="mb-5">
             <div class="row">
@@ -103,6 +112,7 @@
 
 
     <script src="js/information.js"></script>
+    <script src="js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 
 </body>

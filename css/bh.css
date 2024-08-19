@@ -1,0 +1,140 @@
+body {
+
+    background-color: #f4f4f4;
+
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+}
+
+.title {
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 50px;
+}
+
+label {
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+}
+
+.form-control {
+    text-align: center;
+}
+
+.bossInput{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    margin: 0 auto;
+}
+
+.boss-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.icon-img {
+    width: 15px;
+    height: 15px;
+}
+
+#location {
+    margin-left: 5px;
+    font-size: 12px;
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-wrapper {
+    margin-bottom: 10px;
+}
+
+.action-icon {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.action-icon:hover {
+    opacity: 0.7;
+}
+
+.form-container {
+    width: 50%;
+    display: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    /* box-shadow: 0 4rem 5rem rgba(37, 38, 39, 0.5); */
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.input-container{
+    background: #fff;
+    width: 50%;
+    height: 90%;
+    display: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    /* box-shadow: 0 4rem 5rem rgba(37, 38, 39, 0.5); */
+    margin-top: 2%;
+    margin-bottom: 10%;
+}
+
+.input-items {
+    width: 50%;
+    height: 90%;
+    display: relative;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    /* box-shadow: 0 4rem 5rem rgba(37, 38, 39, 0.5); */
+}
+
+
+.timeOfDeath,
+.timetilRespawn,
+.location {
+    font-family: cursive;
+    font-weight: bold;
+}
+
+span {
+    margin-left: 5px;
+}

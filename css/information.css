@@ -6,6 +6,40 @@ body{
     background: #1d2630;
 }
 
+.menu {
+    position: relative;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu-items {
+    width: 10vw;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-items a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.menu-items a:hover {
+    text-decoration: underline;
+}
+
 #Update{
     display: none;
 }
